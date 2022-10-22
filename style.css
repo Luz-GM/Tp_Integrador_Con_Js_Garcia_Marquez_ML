@@ -1,0 +1,22 @@
+.banner {
+  background-image: url(./assets/ba1.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: darken;
+}
+
+.card {
+  border-radius: 0%;
+  margin-top: 120px;
+  display: inline-block;
+}
+
+#borrar-resumen {
+  display: inline-flex;
+}
+
+.categorias {
+  padding: 3em;
+}

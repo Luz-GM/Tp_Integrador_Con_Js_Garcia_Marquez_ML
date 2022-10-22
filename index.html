@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="author"
+      content="María Luz García Márquez, garciamarquezluz@gmail.com"
+    />
+    <title>TP_Integrador_con_JS_García_Márquez_ML</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+
+    <header>
+      <nav
+        class="navbar fixed-top navbar-expand-lg navbar-dark"
+        style="background-color: #353a40"
+      >
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img
+              src="./assets/codoacodo.png"
+              alt="Logo codo a codo"
+              width="100"
+              height=""
+              style="vertical-align: middle"
+            />
+            Conf Bs As
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse flex-row-reverse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >La Conferencia</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#oradores">Los Oradores</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">El Lugar y La Fecha</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#formulario">Conviértete en Orador</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="tickets.html" style="color: #2a9d41"
+                  >Comprar Tickets</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="banner text-white" style="text-align: right">
+      <div
+        class="container"
+        style="
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          height: 800px;
+        "
+      >
+        <div class="banner-info col-12 col-sm-12 col-md-6 col-lg-6">
+          <h5>Conf Bs As</h5>
+          <p id="sentence1">
+            Bs As llega por primera vez a Argentina. Un Evento para compartir
+            con <br />
+            nuestra comunidad el conocimiento y experiencia de los expertos que
+            <br />
+            están creando el futuro de Internet. Ven a conocer a miembres del
+            <br />
+            evento, a otros estudiantes de Codo a Codo y los oradores de primer
+            <br />
+            nivel que tenemos para ti. Te esperamos!
+          </p>
+          <a href="#formulario" class="btn btn-outline-light"
+            >Quiero Ser Orador</a
+          >
+          <a href="tickets.html" class="btn btn-success">Comprar Ticket</a>
+        </div>
+      </div>
+    </div>
+    <div
+      class="oradores"
+      style="margin: 30px; margin-left: 100px; margin-right: 100px"
+    >
+      <h6 class="text-center" id="oradores">CONOCE A</h6>
+      <h3 class="text-center">LOS ORADORES</h3>
+      <div class="row" style="display: flex; justify-content: space-evenly">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+          <div class="card">
+            <img
+              src="./assets/stevejobs.jpg"
+              class="card-img-top"
+              alt="Retrato de Steve Jobs"
+            />
+            <div class="card-body">
+              <span class="badge bg-warning text-dark">JavaScript</span>
+              <span class="badge bg-info text-dark">React</span>
+              <h5 class="card-title">Steve Jobs</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipiscing elit. Et
+                voluptatibus perferendis deleniti, totam fuga sequi iste!
+                Facilis explicabo repellat ut similique incidunt? Ullam nobis
+                beatae, corporis facilis veniam magni ratione!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+          <div class="card">
+            <img
+              src="./assets/bill.jpg"
+              class="card-img-top"
+              alt="Retrato de Bill Gates"
+            />
+            <div class="card-body">
+              <span class="badge bg-warning text-dark">JavaScript</span>
+              <span class="badge bg-info text-dark">React</span>
+              <h5 class="card-title">Bill Gates</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipiscing elit. Et
+                voluptatibus perferendis deleniti, totam fuga sequi iste!
+                Facilis explicabo repellat ut similique incidunt? Ullam nobis
+                beatae, corporis facilis veniam magni ratione!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+          <div class="card">
+            <img
+              src="./assets/ada.jpeg"
+              class="card-img-top"
+              alt="Retrato de Ada Lovelace"
+            />
+            <div class="card-body">
+              <span class="badge bg-secondary">Negocios</span>
+              <span class="badge bg-danger">Startups</span>
+              <h5 class="card-title">Ada Lovelace</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipiscing elit. Et
+                voluptatibus perferendis deleniti, totam fuga sequi iste!
+                Facilis explicabo repellat ut similique incidunt? Ullam nobis
+                beatae, corporis facilis veniam magni ratione!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card bg-dark text-white mb-3">
+      <div class="row g-0">
+        <div class="col-md-6">
+          <img
+            src="./assets/honolulu.jpg"
+            class="img-fluid rounded-start"
+            alt="Paisaje de playa en Honolulu"
+          />
+        </div>
+        <div class="col-md-6">
+          <div class="card-body">
+            <h5 class="card-title">Bs As - Octubre</h5>
+            <p class="card-text">
+              Buenos Aires es la provincia y localidad más grande del estado de
+              Argentina, en los Estados Unidos. Honolulu es la más sureña de
+              entre las principales ciudades estadounidenses. Aunque el nombre
+              de Honolulu se refiere al área urbana en la costa sureste de la
+              isla de Oahu, la ciudad y el condado de Honolulu han formado una
+              ciudad-condado consolidada que cubre toda la ciudad
+              (aproximadamente 600 km<sup>2</sup>
+              de superficie).
+            </p>
+            <a href="#" class="btn btn-outline-light">Conocé más</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="formulario" id="formulario">
+      <div class="container">
+        <div style="text-align: center">
+          <span>CONVIÉRTETE EN UN</span>
+          <h1>ORADOR</h1>
+          <p>
+            Anótate como orador para dar una
+            <u style="text-decoration: underline dotted">charla ignite</u>.
+            Cuéntanos de qué quieres hablar!
+          </p>
+        </div>
+        <form>
+          <div class="row mb-3">
+            <div class="col">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Nombre"
+                aria-label="Nombre"
+              />
+            </div>
+            <div class="col">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Apellido"
+                aria-label="Apellido"
+              />
+            </div>
+          </div>
+          <div class="row mb-3">
+            <div class="col">
+              <textarea
+                class="form-control"
+                id="textarea"
+                placeholder="Sobre qué quieres hablar?"
+                aria-label="Sobre qué quieres hablar?"
+                cols="30"
+                rows="10"
+              ></textarea>
+              <span class="text-muted"
+                >Recuerda incluir un titulo para tu charla</span
+              >
+            </div>
+          </div>
+
+          <button
+            type="submit"
+            class="btn mb-3"
+            style="width: 100%; background-color: #96c93e; color: white"
+          >
+            Enviar
+          </button>
+        </form>
+      </div>
+    </div>
+    <footer>
+      <nav
+        class="navbar navbar-expand-lg navbar-dark"
+        style="background-color: #1f5271"
+      >
+        <div class="container">
+          <ul
+            class="navbar-nav"
+            style="
+              justify-content: space-between;
+              width: 100%;
+              align-items: center;
+            "
+          >
+            <li class="nav-item">
+              <a class="nav-link" href="#">Preguntas <br />frecuentes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="mailto:garciamarquezluz@gmail.com"
+                >Contáctanos</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Prensa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Conferencias</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Términos y <br />condiciones</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Privacidad</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Estudiantes</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </footer>
+  </body>
+</html>
