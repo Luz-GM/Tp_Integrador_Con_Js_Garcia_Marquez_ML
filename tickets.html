@@ -145,33 +145,39 @@
           <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Correo">
         </div>
         <div class="row justify-content-center mb-3">
-          <div class="col mb-3">
-            <label class="form-label">Cantidad</label>
-            <input type="text" class="form-control" placeholder="Cantidad" id="cantidad">
+          
+           <div class="form-group col mb-3">
+            <label for="">Cantidad</label>
+            <input type="text" class="form-control" placeholder="Cantidad" id="cantidadEntradas">
           </div>
-          <div class="col mb-3">
-            <label class="form-label">Categoría</label>
-            <select type="text" class="form-select" id="categoria">
-              <option value="0.2">Estudiante</option>
+            <div class="form-group col mb-3">
+            <label for="">Categoría</label>
+            <select class="form-select" id="categoria">
+              <option selected value="0.2">Estudiante</option>
               <option value="0.5">Trainee</option>
               <option value="0.85">Junior</option>
             </select>
           </div>
-          <div>
-            <input class="form-control" id="total" type="text" value="Total a pagar:$" readonly>
+
+
+          <div class="form-row">
+            <div class="form-group col">
+                <div id="totalCompra" class="alert alert-primary" role="alert">Total a Pagar: $ </div>
+            </div>
           </div>
         </div>
+
         
         <div class="row justify-content-center mb-3">
-            <div id="borrar" class="d-grid col-md-6">
-                <button class="btn btn-success" id="btn-borrar" type="reset">Borrar</button>
+            <div class="d-grid col-md-6">
+                <button type="reset" class="btn btn-success" id="botonReset" >Borrar</button>
             </div>
-            <div id="resumen" class="d-grid col-md-6">
-                <button class="btn btn-success" id="btn-resumen" type="button">Resumen</button>
+            <div class="d-grid col-md-6">
+                <button type="button" class="btn btn-success" id="botonResumen" onclick="resumen()" >Resumen</button>
             </div>
         </div>
 
-      </form>
+    </form>
         
     
     <footer>
