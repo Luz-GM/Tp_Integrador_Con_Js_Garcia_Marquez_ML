@@ -23,4 +23,8 @@ function resumen() {
     totalCompra.innerHTML= "Total a Pagar: $ " + (cantidadEntradas.value * valorEntrada * categoria.value);
   }
 
+  function borrar() {
+    let totalCompra = document.getElementById('totalCompra')
+    totalCompra.innerHTML= "Total a Pagar: $ "
+  }
     
